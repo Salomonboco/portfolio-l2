@@ -16,7 +16,7 @@
             line-height: 1.65;
         }
         a { color: inherit; }
- 
+
         /* Header */
         header {
             position: sticky; top: 0; z-index: 10;
@@ -31,9 +31,10 @@
         nav { display: flex; gap: 24px; }
         nav a { text-decoration: none; color: var(--discret); font-size: 0.95rem; }
         nav a:hover { color: var(--accent); }
- 
+        nav a.retour { color: var(--accent); font-weight: 600; }
+
         section { padding: 80px 8%; max-width: 1100px; margin: 0 auto; }
- 
+
         /* Hero */
         .hero { padding-top: 100px; }
         .etiquette {
@@ -62,10 +63,10 @@
         .btn:hover { transform: translateY(-2px); }
         .btn.plein { background: var(--accent); color: #fff; }
         .btn.contour { border: 2px solid var(--texte); }
- 
+
         h2 { font-size: 1.8rem; letter-spacing: -0.02em; margin-bottom: 8px; }
         .sous-titre { color: var(--discret); margin-bottom: 36px; }
- 
+
         /* Projets */
         .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
         .carte {
@@ -87,13 +88,13 @@
         }
         .lien { color: var(--accent); font-weight: 600; text-decoration: none; }
         .lien:hover { text-decoration: underline; }
- 
+
         /* Parcours */
         .liste-simple { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
         .bloc { border-left: 3px solid var(--accent); padding-left: 18px; }
         .bloc h3 { font-size: 1.05rem; margin-bottom: 6px; }
         .bloc p { color: var(--discret); font-size: 0.97rem; }
- 
+
         /* Contact */
         #contact { text-align: center; }
         .contacts { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
@@ -103,9 +104,9 @@
             transition: border-color .2s, color .2s;
         }
         .contacts a:hover { border-color: var(--accent); color: var(--accent); }
- 
+
         footer { text-align: center; padding: 28px; color: var(--discret); font-size: 0.9rem; border-top: 1px solid var(--trait); }
- 
+
         @media (max-width: 700px) {
             header { flex-direction: column; gap: 8px; padding: 12px 5%; }
             nav { gap: 16px; flex-wrap: wrap; justify-content: center; }
